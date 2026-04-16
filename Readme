@@ -1,0 +1,85 @@
+# 🔐 Password Generator
+
+A clean, minimal password generator built with **HTML, CSS, and Vanilla JavaScript**. Instantly generate strong, customizable passwords right in the browser — no frameworks, no dependencies.
+
+---
+
+## 📽️ Demo
+
+<!-- Add your demo GIF below -->
+![Demo](./assets/demo.gif)
+
+---
+
+## ✨ Features
+
+- Set password length using a slider (1–20 characters)
+- Choose character types: Uppercase, Lowercase, Numbers, Symbols
+- Password strength indicator (Weak / Medium / Strong)
+- One-click copy to clipboard with visual feedback
+- Shuffled output — no predictable patterns
+- Fully responsive UI
+
+---
+
+## 🗂️ Project Structure
+
+```
+password-generator/
+├── index.html       # Markup
+├── style.css        # Styling
+├── script.js        # Logic
+└── assets/
+    └── copy.svg     # Copy icon
+```
+
+---
+
+## 🚀 Getting Started
+
+No install needed. Just open the project locally:
+
+1. Clone or download this repo
+2. Open `index.html` in your browser
+
+```bash
+git clone https://github.com/your-username/password-generator.git
+cd password-generator
+# Open index.html in browser
+```
+
+---
+
+## 🧠 How It Works
+
+1. User selects desired character types via checkboxes
+2. Password length is set via slider
+3. On clicking **Generate Password**:
+   - At least one character from each selected type is guaranteed
+   - Remaining characters are filled randomly from selected types
+   - The full password is **shuffled** using Fisher-Yates algorithm to avoid predictable order
+4. Strength is calculated based on character variety and length
+
+### Strength Rules
+
+| Condition | Strength |
+|-----------|----------|
+| All types checked + length ≥ 12 | 🟢 Strong |
+| Mixed types + length ≥ 8 | 🟡 Medium |
+| Anything else | 🔴 Weak |
+
+---
+
+## 🛠️ Built With
+
+- HTML5
+- CSS3
+- Vanilla JavaScript (ES6+)
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+[def]: ./assets/demo.gif
